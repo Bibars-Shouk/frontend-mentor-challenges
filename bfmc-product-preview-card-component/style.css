@@ -1,0 +1,154 @@
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+  --color-dark-cyan: #3c8067;
+  --color-cream: #f2ebe3;
+  --color-dark-blue: #1c232b;
+  --color-grayish-blue: #6c7289;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  background-color: var(--color-cream);
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.35rem;
+  font-weight: 500;
+  opacity: 0.8;
+  color: var(--color-grayish-blue);
+}
+
+h1 {
+  font-family: var(--font-fraunces);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.card {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 90%;
+  max-width: 33.75rem;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.card-img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.product {
+  padding: 2rem;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.product-name {
+  color: var(--color-dark-blue);
+  line-height: 1;
+  margin-top: 1.5rem;
+}
+
+.product-description {
+  margin-top: 1.5rem;
+  line-height: 1.7;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.product-price h1 {
+  color: var(--color-dark-cyan);
+}
+
+.product-price p {
+  margin-left: 2rem;
+  color: var(--color-grayish-blue);
+  text-decoration: line-through;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--color-dark-cyan);
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline-color: var(--color-grayish-blue);
+}
+
+.btn:active {
+  filter: brightness(50%);
+}
+
+.btn span {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.attribution {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  color: var(--color-grayish-blue);
+}
+.attribution a {
+  color: var(--color-dark-cyan);
+}
+
+@media (min-width: 770px) {
+  .card {
+    display: flex;
+    min-width: 60rem;
+    border-radius: 1rem;
+  }
+
+  .card picture {
+    width: 50%;
+    display: flex;
+  }
+
+  .card-img {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .product {
+    padding: 4rem 3.4rem;
+    width: 50%;
+  }
+}
