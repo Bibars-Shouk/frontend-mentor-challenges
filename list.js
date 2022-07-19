@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-order-summary-component",
+    tools: ["HTML", "CSS"],
+  },
+  {
     name: "bfmc-nft-preview-card-component",
     tools: ["HTML", "CSS"],
   },
