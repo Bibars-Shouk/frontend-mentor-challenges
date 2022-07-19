@@ -1,0 +1,163 @@
+:root {
+  --color-soft-blue: #8bacda;
+  --color-cyan: #00fff7;
+  --color-cyan__transparent: #00fff780;
+  --color-dark-blue__body: #0d192b;
+  --color-dark-blue__card: #14253d;
+  --color-dark-blue__line: #2f415b;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-dark-blue__body);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--color-cyan);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+p,
+span {
+  color: var(--color-soft-blue);
+}
+
+.nft-card {
+  width: 87.2%;
+  max-width: 35rem;
+  background-color: var(--color-dark-blue__card);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  padding: 2.4rem;
+  box-shadow: rgba(28, 48, 77, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.nft-card > h1 {
+  margin-top: 3rem;
+}
+
+.nft-card > p {
+  margin-top: 2rem;
+}
+
+.nft-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.nft-img::after {
+  content: url("./images/icon-view.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--color-cyan__transparent);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.nft-img:hover::after {
+  opacity: 1;
+}
+
+.nft-img img {
+  border-radius: 0.5rem;
+}
+
+.purchase-info {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-dark-blue__line);
+}
+
+.price,
+.time-left {
+  display: flex;
+  align-items: center;
+}
+
+.price span,
+.time-left span {
+  font-size: 1.5rem;
+  margin-left: 0.6rem;
+}
+
+.author {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  height: 3.5rem;
+  border: 1px solid #fff;
+  border-radius: 10rem;
+}
+
+.author p {
+  margin-left: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.attribution {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fff;
+}
+.attribution a {
+  color: var(--color-soft-blue);
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
