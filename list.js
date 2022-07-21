@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-3-column-preview-card-component",
+    tools: ["HTML", "CSS"],
+  },
+  {
     name: "bfmc-stats-preview-card-component",
     tools: ["HTML", "CSS"],
   },
