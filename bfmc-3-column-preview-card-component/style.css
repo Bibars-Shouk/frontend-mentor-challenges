@@ -1,0 +1,133 @@
+:root {
+  --font-big-shoulders-display: "Big Shoulders Display", cursive;
+  --font-lexend: "Lexend Deca", sans-serif;
+  --color-bright-orange: #e38826;
+  --color-dark-cyan: #006970;
+  --color-very-dark-cyan: #004241;
+  --color-light-gray: #f2f2f2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-lexend);
+  background-color: var(--color-light-gray);
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  min-height: calc(100vh - 1.4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.preview {
+  width: 87.2%;
+  max-width: 92rem;
+}
+
+.car {
+  padding: 4.8rem 5rem;
+}
+
+.car > h1 {
+  font-family: var(--font-big-shoulders-display);
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+.car > p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 3rem;
+  color: var(--color-light-gray);
+}
+
+.car.sedans {
+  background-color: var(--color-bright-orange);
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.car.suvs {
+  background-color: var(--color-dark-cyan);
+}
+.car.luxury {
+  background-color: var(--color-very-dark-cyan);
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.btn {
+  margin-top: 2.2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: #fff;
+  padding: 1.45rem 3.16rem;
+  border-radius: 10rem;
+  transition: all 0.3s;
+}
+
+.car.sedans .btn {
+  color: var(--color-bright-orange);
+}
+
+.car.suvs .btn {
+  color: var(--color-dark-cyan);
+}
+
+.car.luxury .btn {
+  color: var(--color-very-dark-cyan);
+}
+
+.car > .btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1.35rem 3.16rem;
+}
+
+.attribution {
+  color: #000;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-bright-orange);
+}
+
+@media (min-width: 865px) {
+  main {
+    padding: 0 0;
+  }
+
+  .preview {
+    display: flex;
+  }
+
+  .car.sedans {
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+
+  .car.luxury {
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+
+  .btn {
+    margin-top: 8rem;
+  }
+}
