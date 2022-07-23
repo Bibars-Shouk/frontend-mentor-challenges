@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-faq-accordion-card",
+    tools: ["HTML", "CSS", "JS"],
+  },
+  {
     name: "bfmc-article-preview-component",
     tools: ["HTML", "CSS", "JS"],
   },
