@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-four-card-feature-section",
+    tools: ["HTML", "CSS"],
+  },
+  {
     name: "bfmc-social-proof-section",
     tools: ["HTML", "CSS"],
   },
