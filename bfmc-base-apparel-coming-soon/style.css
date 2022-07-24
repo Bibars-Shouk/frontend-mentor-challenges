@@ -1,0 +1,243 @@
+:root {
+  --color-light-red: #ce9797;
+  --color-soft-red: #f96262;
+  --color-grayish-red: #413a3a;
+  --linear-gradient-whitish: linear-gradient(135deg, #ffffff, #fff5f5);
+  --linear-gradient-pinkish: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-image: var(--linear-gradient-whitish);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.1rem;
+  font-weight: 400;
+  letter-spacing: 11.2px;
+  text-transform: uppercase;
+  color: var(--color-grayish-red);
+}
+
+h1 > span {
+  font-weight: 300;
+  color: var(--color-light-red);
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: var(--color-light-red);
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.logo-mobile {
+  height: 2.3rem;
+  margin: 3rem 0 0 3.2rem;
+}
+
+.hero-img {
+  margin-top: 3.2rem;
+}
+
+.img-mobile {
+  width: 100%;
+}
+
+.body {
+  text-align: center;
+  padding: 0 3.1rem;
+}
+
+.body > h1 {
+  margin-top: 6.4rem;
+}
+
+.body > p {
+  margin-top: 2.6rem;
+}
+
+form {
+  position: relative;
+  margin-top: 3.3rem;
+}
+
+input {
+  height: 4.8rem;
+  width: 100%;
+  border-radius: 10rem;
+  background-color: transparent;
+  border: 1px solid var(--color-light-red);
+  padding: 0 2.5rem;
+  color: var(--color-grayish-red);
+  font-size: 1.4rem;
+}
+
+input.invalid {
+  border-color: var(--color-soft-red);
+}
+
+input.invalid + .error-icon {
+  display: block;
+}
+
+.error-icon {
+  position: absolute;
+  top: 50%;
+  right: 8rem;
+  transform: translateY(-50%);
+  display: none;
+}
+
+input::placeholder {
+  color: var(--color-light-red);
+}
+
+input:focus {
+  outline-color: var(--color-light-red);
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10rem;
+  height: 100%;
+  width: 6.4rem;
+  border: none;
+  background-image: var(--linear-gradient-pinkish);
+  box-shadow: rgba(249, 98, 98, 0.15) 0px 14px 28px,
+    rgba(249, 98, 98, 0.12) 0px 10px 10px;
+  cursor: pointer;
+}
+
+.error-msg {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 2.5rem;
+  color: var(--color-soft-red);
+  display: none;
+}
+
+.attribution {
+  margin-top: 9rem;
+
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--color-grayish-red);
+}
+.attribution a {
+  color: var(--color-soft-red);
+}
+
+@media (min-width: 769px) {
+  body {
+    font-family: "Josefin Sans", sans-serif;
+    background-image: var(--linear-gradient-whitish);
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 6.4rem;
+    line-height: 7rem;
+    font-weight: 400;
+    letter-spacing: 17.28px;
+    text-transform: uppercase;
+    color: var(--color-grayish-red);
+  }
+
+  h1 > span {
+    font-weight: 300;
+    font-size: 6.8rem;
+    letter-spacing: 14.96px;
+    display: block;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+
+  .img-desktop {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .hero-img {
+    margin-top: 0;
+    width: 42.4%;
+  }
+
+  .body {
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 6.5rem 6.5rem 0 16.8rem;
+    width: 58.6%;
+  }
+
+  .body > h1 {
+    margin-top: 13.5rem;
+  }
+
+  .body > p {
+    margin-top: 1.9rem;
+    max-width: 44.4rem;
+  }
+
+  form {
+    margin-top: 4rem;
+    max-width: 44.4rem;
+  }
+
+  .attribution {
+    margin-top: 8rem;
+    text-align: left;
+  }
+}
