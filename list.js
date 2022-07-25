@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-single-price-grid-component",
+    tools: ["HTML", "CSS"],
+  },
+  {
     name: "bfmc-intro-component-with-signup-form",
     tools: ["HTML", "CSS", "JS"],
   },
