@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-intro-component-with-signup-form",
+    tools: ["HTML", "CSS", "JS"],
+  },
+  {
     name: "bfmc-base-apparel-coming-soon",
     tools: ["HTML", "CSS", "JS"],
   },
