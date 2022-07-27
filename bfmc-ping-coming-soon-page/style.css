@@ -1,0 +1,270 @@
+:root {
+  --color-blue: hsl(223, 87%, 63%);
+  --color-gray: hsl(0, 0%, 59%);
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-dark-blue: hsl(209, 33%, 12%);
+  --color-light-red: hsl(354, 100%, 66%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.2rem;
+  letter-spacing: 0.11px;
+  color: var(--color-gray);
+}
+
+h1 > span {
+  font-weight: 700;
+  color: #000;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 0.06px;
+  color: var(--color-gray);
+}
+
+.social-copy > span {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-gray);
+}
+
+button {
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.06px;
+  color: #fff;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  min-height: calc(100vh - 1.65rem);
+  padding: 8.4rem 0 2rem 0;
+}
+
+.coming-soon {
+  width: 85.33%;
+  max-width: 64rem;
+}
+
+header {
+  text-align: center;
+}
+
+.logo {
+  height: 1.5rem;
+}
+
+.logo > img {
+  height: 100%;
+}
+
+header > h1 {
+  margin-top: 4rem;
+}
+
+header > p {
+  margin-top: 1.7rem;
+}
+
+form {
+  margin-top: 3.2rem;
+  padding: 0 1.9rem;
+  text-align: center;
+}
+
+.input-container.invalid > input {
+  border-color: var(--color-light-red);
+}
+
+.input-container.invalid > .err-msg {
+  display: block;
+}
+
+.input-container.invalid + button {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.input-container > input {
+  width: 100%;
+  height: 4rem;
+  padding: 0 3.2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: transparent;
+  border: 1px solid var(--color-pale-blue);
+  border-radius: 10rem;
+}
+
+.input-container > input::placeholder {
+  color: var(--color-pale-blue);
+}
+
+.err-msg {
+  font-style: italic;
+  color: var(--color-light-red);
+  margin-top: 0.5rem;
+  display: none;
+}
+
+form > button {
+  width: 100%;
+  padding: 1.2rem 0;
+  margin-top: 1rem;
+  margin-bottom: 7.2rem;
+  background-color: var(--color-blue);
+  border: none;
+  border-radius: 10rem;
+  box-shadow: rgba(79, 125, 243, 0.25) 0px 4px 20px,
+    rgba(79, 125, 243, 0.22) 0px 5px 20px;
+  cursor: pointer;
+}
+
+form > button:hover {
+  filter: brightness(110%);
+}
+
+.social-copy {
+  margin-top: 11.9rem;
+}
+
+.social-container {
+  text-align: center;
+}
+
+.social-container > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10rem;
+  border: 1px solid var(--color-pale-blue);
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-blue);
+  transition: all 0.3s;
+}
+
+.social-container > a:hover {
+  background-color: var(--color-blue);
+  color: #fff;
+  border: none;
+}
+
+.social-container > a + a {
+  margin-left: 1.3rem;
+}
+
+.social-copy > span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2.7rem;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--color-gray);
+}
+.attribution a {
+  color: var(--color-blue);
+}
+
+@media (min-width: 680px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .social-copy > span {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    height: 2.4rem;
+  }
+
+  header > h1 {
+    margin-top: 4.9rem;
+  }
+
+  form {
+    margin-top: 4rem;
+    margin-bottom: 9.2rem;
+    padding: 0 0;
+    display: flex;
+  }
+
+  .input-container {
+    margin-right: 1.6rem;
+    flex-grow: 1;
+  }
+
+  .input-container > input {
+    height: 100%;
+    font-size: 1.6rem;
+  }
+
+  .input-container.invalid > .err-msg {
+    display: block;
+  }
+
+  .input-container.invalid + button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .err-msg {
+    font-size: 1.2rem;
+    padding-left: 3rem;
+    text-align: left;
+  }
+
+  form > button {
+    width: auto;
+    padding: 2rem 6.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .social-copy {
+    margin-top: 7.2rem;
+  }
+}
