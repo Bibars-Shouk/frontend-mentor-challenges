@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-huddle-landing-page",
+    tools: ["HTML", "CSS"],
+  },
+  {
     name: "bfmc-ping-coming-soon-page",
     tools: ["HTML", "CSS", "JS"],
   },
