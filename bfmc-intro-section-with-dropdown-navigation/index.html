@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snap</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="./index.html">
+        <img src="./images/logo.svg" alt="Our logo" />
+      </a>
+      <nav class="nav">
+        <button class="nav-btn nav-btn-open">
+          <!-- <i class="fas fa-bars"></i> -->
+          <img src="./images/icon-menu.svg" alt="Bars icon: navbar bar" />
+        </button>
+        <div class="nav-container">
+          <button class="nav-btn nav-btn-close">
+            <!-- <i class="fas fa-times"></i> -->
+            <img
+              src="./images/icon-close-menu.svg"
+              alt="Times icon: nav close "
+            />
+          </button>
+          <ul class="nav-list">
+            <li class="ddm">
+              <button class="ddm-btn features">
+                <p>Features</p>
+                <i class="fas fa-angle-down"></i>
+              </button>
+              <ul class="ddm ddm__menu">
+                <li class="ddm ddm__menu-item">
+                  <i class="fas fa-clipboard-list"></i>
+                  <p>Todo List</p>
+                </li>
+                <li class="ddm ddm__menu-item">
+                  <i class="fas fa-calendar-day"></i>
+                  <p>Calender</p>
+                </li>
+                <li class="ddm ddm__menu-item">
+                  <i class="fas fa-bell"></i>
+                  <p>Reminders</p>
+                </li>
+                <li class="ddm ddm__menu-item">
+                  <i class="fas fa-clock"></i>
+                  <p>Planning</p>
+                </li>
+              </ul>
+            </li>
+            <li class="ddm">
+              <button class="ddm-btn company">
+                <p>Company</p>
+                <i class="fas fa-angle-down"></i>
+              </button>
+              <ul class="ddm ddm__menu links">
+                <li class="ddm ddm__menu-link">
+                  <a href="./index.html">History</a>
+                </li>
+                <li class="ddm ddm__menu-link">
+                  <a href="./index.html">Our Team</a>
+                </li>
+                <li class="ddm ddm__menu-link">
+                  <a href="./index.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html">About</a>
+            </li>
+          </ul>
+          <div class="entry">
+            <a href="./index.html" class="entry-btn__login">Login</a>
+            <a href="./index.html" class="entry-btn__register">Register</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-container">
+        <picture>
+          <source
+            media="(min-width:769px)"
+            srcset="./images/image-hero-desktop.png"
+          />
+          <img
+            src="./images/image-hero-mobile.png"
+            alt="A hero image of a guy working on his laptop"
+          />
+        </picture>
+      </div>
+      <div class="body">
+        <div class="text-container">
+          <h1><span>Make</span> remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a class="btn" href="./index.html">Learn more</a>
+        </div>
+        <div class="clients-container">
+          <div class="client">
+            <img src="./images/client-databiz.svg" alt="Dataiz's logo" />
+          </div>
+          <div class="client">
+            <img src="./images/client-audiophile.svg" alt="Audiophile's logo" />
+          </div>
+          <div class="client">
+            <img src="./images/client-meet.svg" alt="meet's logo" />
+          </div>
+          <div class="client">
+            <img src="./images/client-maker.svg" alt="maker's logo" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Bibars-Shouk">Bibars Shouk</a>.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
