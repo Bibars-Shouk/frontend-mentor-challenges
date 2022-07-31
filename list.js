@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-intro-section-with-dropdown-navigation",
+    tools: ["HTML", "CSS", "JS"],
+  },
+  {
     name: "bfmc-expenses-chart-component",
     tools: ["HTML", "CSS", "JS"],
   },
