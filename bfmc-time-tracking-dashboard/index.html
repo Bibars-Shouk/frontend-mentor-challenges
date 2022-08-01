@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="d-flex">
+      <div class="dashboard">
+        <div class="profile">
+          <div class="user-info">
+            <div class="profile-picture">
+              <img
+                src="./images/image-jeremy.png"
+                alt="Jeremy's profile picture"
+              />
+            </div>
+            <div class="username">
+              <h1>Report for</h1>
+              <p>Jeremy Robson</p>
+            </div>
+          </div>
+          <div class="time-frame-controller">
+            <div class="radio-btn-container">
+              <input
+                type="radio"
+                name="time-frame-radio"
+                id="daily"
+                value="daily"
+                checked
+              />
+              <label for="daily">Daily</label>
+            </div>
+            <div class="radio-btn-container">
+              <input
+                type="radio"
+                name="time-frame-radio"
+                id="weekly"
+                value="weekly"
+              />
+              <label for="weekly">Weekly</label>
+            </div>
+            <div class="radio-btn-container">
+              <input
+                type="radio"
+                name="time-frame-radio"
+                id="monthly"
+                value="monthly"
+              />
+              <label for="monthly">Monthly</label>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="row">
+            <div class="item">
+              <div class="colored-header work">
+                <img src="./images/icon-work.svg" alt="Work icon" />
+              </div>
+              <div class="item-body">
+                <div class="item-header">
+                  <h2>Work</h2>
+                  <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+                </div>
+                <div class="item-content work">
+                  <p class="time-spent">
+                    <!-- current time spending -->
+                  </p>
+                  <p class="previous-time-spent">
+                    <!-- pervious time spending -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="colored-header play">
+                <img src="./images/icon-play.svg" alt="Play icon" />
+              </div>
+              <div class="item-body">
+                <div class="item-header">
+                  <h2>Play</h2>
+                  <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+                </div>
+                <div class="item-content play">
+                  <p class="time-spent"></p>
+                  <p class="previous-time-spent"></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="colored-header study">
+                <img src="./images/icon-study.svg" alt="Study icon" />
+              </div>
+              <div class="item-body">
+                <div class="item-header">
+                  <h2>Study</h2>
+                  <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+                </div>
+                <div class="item-content study">
+                  <p class="time-spent"></p>
+                  <p class="previous-time-spent"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="item">
+              <div class="colored-header exercise">
+                <img src="./images/icon-exercise.svg" alt="Exercise icon" />
+              </div>
+              <div class="item-body">
+                <div class="item-header">
+                  <h2>Exercise</h2>
+                  <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+                </div>
+                <div class="item-content exercise">
+                  <p class="time-spent"></p>
+                  <p class="previous-time-spent"></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="colored-header social">
+                <img src="./images/icon-social.svg" alt="Social icon" />
+              </div>
+              <div class="item-body">
+                <div class="item-header">
+                  <h2>Social</h2>
+                  <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+                </div>
+                <div class="item-content social">
+                  <p class="time-spent"></p>
+                  <p class="previous-time-spent"></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="colored-header self-care">
+                <img src="./images/icon-self-care.svg" alt="Self clare icon" />
+              </div>
+              <div class="item-body">
+                <div class="item-header">
+                  <h2>Self Care</h2>
+                  <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+                </div>
+                <div class="item-content self-care">
+                  <p class="time-spent"></p>
+                  <p class="previous-time-spent"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Bibars-Shouk">Bibars Shouk</a>.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

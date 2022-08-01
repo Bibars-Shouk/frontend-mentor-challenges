@@ -1,0 +1,317 @@
+:root {
+  --color-blue: hsl(246, 80%, 60%);
+  --color-light-red: hsl(15, 100%, 70%);
+  --color-soft-blue: hsl(195, 74%, 62%);
+  --color-soft-red: hsl(348, 100%, 68%);
+  --color-lime-green: hsl(145, 58%, 55%);
+  --color-violet: hsl(264, 64%, 52%);
+  --color-soft-orange: hsl(43, 84%, 65%);
+
+  --color-very-dark-blue: hsl(226, 43%, 10%);
+  --color-dark-blue: hsl(235, 46%, 20%);
+  --color-desaturated-blue: hsl(235, 45%, 61%);
+  --color-pale-Blue: hsl(236, 100%, 87%);
+
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--color-very-dark-blue);
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  min-height: calc(100vh - 1.5rem);
+  padding: 8rem 0;
+}
+
+.dashboard {
+  width: 87.2%;
+  max-width: 111rem;
+}
+
+.user-info {
+  position: relative;
+  background-color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  padding: 3.2rem 2.9rem;
+  border-radius: 1.4rem;
+  z-index: 2;
+}
+
+.profile-picture {
+  width: 7rem;
+  margin-right: 1.7rem;
+}
+
+.profile-picture > img {
+  border-radius: 10rem;
+  border: 2px solid #fff;
+}
+
+.username > h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-pale-Blue);
+}
+
+.username > p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #f1f1f1;
+  margin-top: 0.4rem;
+}
+
+.time-frame-controller {
+  background-color: var(--color-dark-blue);
+  padding: 3.6rem 3.3rem 2.4rem;
+  margin-top: -1.2rem;
+  border-radius: 0 0 1.4rem 1.4rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio-btn-container > input {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.radio-btn-container > input:checked + label {
+  font-weight: 400;
+  color: var(--color-pale-Blue);
+}
+
+.radio-btn-container > label {
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: var(--color-desaturated-blue);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.radio-btn-container > label:hover {
+  font-weight: 400;
+  color: var(--color-pale-Blue);
+}
+
+.grid {
+  margin-top: 2.4rem;
+}
+
+.row + .row {
+  margin-top: 2.4rem;
+}
+
+.item + .item {
+  margin-top: 2.4rem;
+}
+
+.colored-header {
+  overflow: hidden;
+  border-radius: 1.4rem 1.4rem 0 0;
+}
+
+.colored-header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: 1.8rem;
+  margin-top: -0.6rem;
+  height: 6rem;
+}
+
+.colored-header.work {
+  background-color: var(--color-light-red);
+}
+
+.colored-header.play {
+  background-color: var(--color-soft-blue);
+}
+
+.colored-header.study {
+  background-color: var(--color-soft-red);
+}
+
+.colored-header.exercise {
+  background-color: var(--color-lime-green);
+}
+
+.colored-header.social {
+  background-color: var(--color-violet);
+}
+
+.colored-header.self-care {
+  background-color: var(--color-soft-orange);
+}
+
+.item-body {
+  position: relative;
+  background-color: var(--color-dark-blue);
+  border-radius: 1.4rem;
+  padding: 2.7rem 2.3rem;
+  margin-top: -2.2rem;
+  z-index: 2;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.item-body:hover {
+  background-color: #34397b;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-header > img:hover {
+  filter: brightness(1000%);
+}
+
+.item-header > h2 {
+  font-size: 1.9rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.time-spent {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.previous-time-spent {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.225px;
+  color: var(--color-pale-Blue);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--color-pale-Blue);
+}
+.attribution a {
+  color: var(--color-blue);
+}
+
+@media (min-width: 769px) {
+  main {
+    padding: 0;
+  }
+
+  .dashboard {
+    display: flex;
+  }
+
+  .profile {
+    min-width: 25.5rem;
+  }
+
+  .user-info {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3.4rem 2.9rem;
+    min-height: 33rem;
+  }
+
+  .profile-picture {
+    width: 8.4rem;
+    margin-right: 0;
+  }
+
+  .username {
+    margin-top: 4rem;
+  }
+
+  .username > p {
+    font-size: 4rem;
+  }
+
+  .time-frame-controller {
+    padding: 3.6rem 3.1rem 3.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .radio-btn-container {
+    margin-top: 1.9rem;
+  }
+
+  .grid {
+    margin-top: 0;
+    margin-left: 3rem;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .row + .row {
+    margin-top: 3rem;
+  }
+
+  .item {
+    min-width: 25.5rem;
+  }
+
+  .item + .item {
+    margin-top: 0;
+    margin-left: 3rem;
+  }
+
+  .colored-header > img {
+    height: 7.2rem;
+  }
+
+  .item-body {
+    padding: 3.375rem 2.3rem;
+  }
+
+  .item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .item-content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.4rem;
+  }
+
+  .time-spent {
+    font-size: 5.6rem;
+  }
+}
