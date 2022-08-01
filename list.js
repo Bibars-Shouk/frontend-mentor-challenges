@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-advice-generator-app",
+    tools: ["HTML", "CSS", "JS"],
+  },
+  {
     name: "bfmc-intro-section-with-dropdown-navigation",
     tools: ["HTML", "CSS", "JS"],
   },
