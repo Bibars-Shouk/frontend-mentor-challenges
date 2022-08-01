@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-time-tracking-dashboard",
+    tools: ["HTML", "CSS", "JS"],
+  },
+  {
     name: "bfmc-advice-generator-app",
     tools: ["HTML", "CSS", "JS"],
   },
