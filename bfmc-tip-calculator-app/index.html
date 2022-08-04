@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main class="d-flex">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Our logo" />
+        </div>
+        <div class="app">
+          <form action="./index.html">
+            <div class="inputs">
+              <div class="input-bill">
+                <label for="bill">Bill</label>
+                <div class="input-bill__input-container">
+                  <input
+                    type="number"
+                    name="bill"
+                    id="bill"
+                    placeholder="0"
+                    step=".001"
+                  />
+                  <span class="dollar-sign">$</span>
+                </div>
+                <p class="err-msg">Bill must be bigger than zero!</p>
+              </div>
+              <div class="input-tip">
+                <label>Select Tip %</label>
+                <div class="input-tip__inputs-grid">
+                  <div class="input-item">
+                    <input type="radio" name="tip" id="tip-5" value="5" />
+                    <label for="tip-5">5%</label>
+                  </div>
+                  <div class="input-item">
+                    <input type="radio" name="tip" id="tip-10" value="10" />
+                    <label for="tip-10">10%</label>
+                  </div>
+                  <div class="input-item">
+                    <input type="radio" name="tip" id="tip-15" value="15" />
+                    <label for="tip-15">15%</label>
+                  </div>
+                  <div class="input-item">
+                    <input type="radio" name="tip" id="tip-25" value="25" />
+                    <label for="tip-25">25%</label>
+                  </div>
+                  <div class="input-item">
+                    <input type="radio" name="tip" id="tip-50" value="50" />
+                    <label for="tip-50">50%</label>
+                  </div>
+                  <div class="input-item">
+                    <input
+                      type="number"
+                      name="tip-input"
+                      id="tip-custom"
+                      placeholder="Custom"
+                    />
+                  </div>
+                </div>
+                <p class="err-msg">Tip can't be a negative value!</p>
+              </div>
+              <div class="input-number-of-people">
+                <label for="number-of-people">Number of People</label>
+                <div class="input-number-of-people__input-container">
+                  <input
+                    type="number"
+                    name="number-of-people"
+                    id="number-of-people"
+                    placeholder="0"
+                  />
+                  <img
+                    src="./images/icon-person.svg"
+                    alt="Person-icon"
+                    class="person-icon"
+                  />
+                </div>
+                <div class="err-msg">Can't be less than 1!</div>
+              </div>
+            </div>
+            <div class="result">
+              <div class="result-container">
+                <div class="amount-container">
+                  <p class="amount-text">
+                    Tip Amount
+                    <span>/ person</span>
+                  </p>
+                  <div class="amount-value tip">$0.00</div>
+                </div>
+                <div class="amount-container">
+                  <p class="amount-text">
+                    Total
+                    <span>/ person</span>
+                  </p>
+                  <div class="amount-value total">$0.00</div>
+                </div>
+              </div>
+              <button class="reset-btn" disabled>Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Bibars-Shouk">Bibars Shouk</a>.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
