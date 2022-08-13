@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "bfmc-sunnyside-agency-landing-page",
+    tools: ["HTML", "CSS", "JS"],
+  },
+  {
     name: "bfmc-tip-calculator-app",
     tools: ["HTML", "CSS", "JS"],
   },
