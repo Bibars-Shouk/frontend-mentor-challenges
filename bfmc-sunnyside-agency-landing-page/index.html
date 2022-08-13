@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sunnyside agency</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar__logo" href="./index.html">
+        <img src="./images/logo.svg" alt="Our logo" />
+      </a>
+      <button class="navbar__btn">
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="Hamburger icon: toggle navbar"
+        />
+      </button>
+      <ul class="navbar__nav">
+        <li class="navbar__nav-item">
+          <a href="./index.html">About</a>
+        </li>
+        <li class="navbar__nav-item">
+          <a href="./index.html">Services</a>
+        </li>
+        <li class="navbar__nav-item">
+          <a href="./index.html">Projects</a>
+        </li>
+        <li class="navbar__nav-item">
+          <a href="./index.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <h1 class="hero__header">We are creatives</h1>
+      <img class="hero__img" src="./images/icon-arrow-down.svg" alt="" />
+    </header>
+    <main>
+      <section class="about">
+        <picture class="about__picture">
+          <source
+            media="(min-width: 769px )"
+            srcset="./images/desktop/image-transform.jpg"
+          />
+          <img
+            class="about__img"
+            src="./images/mobile/image-transform.jpg"
+            alt=""
+          />
+        </picture>
+        <article class="about__article">
+          <h1 class="about__header">Transform your brand</h1>
+          <p class="about__text">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a class="about__link" href="./index.html">Learn more</a>
+        </article>
+      </section>
+      <section class="about about--reversed">
+        <picture class="about__picture">
+          <source
+            media="(min-width: 769px )"
+            srcset="./images/desktop/image-stand-out.jpg"
+          />
+          <img
+            class="about__img"
+            src="./images/mobile/image-stand-out.jpg"
+            alt=""
+          />
+        </picture>
+        <article class="about__article">
+          <h1 class="about__header">Stand out to the right audience</h1>
+          <p class="about__text">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a class="about__link about__link--red" href="./index.html"
+            >Learn more</a
+          >
+        </article>
+      </section>
+      <div class="services">
+        <section class="services__service">
+          <article class="services_article">
+            <h1 class="services__header">Graphic design</h1>
+            <p class="services__paragraph">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </article>
+        </section>
+        <section class="services__service services__service--background">
+          <article class="services_article">
+            <h1 class="services__header services__header--bluish">
+              Photography
+            </h1>
+            <p class="services__paragraph services__paragraph--bluish">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </article>
+        </section>
+      </div>
+      <section class="testimonials">
+        <h1 class="testimonials__header">Client testimonials</h1>
+        <div class="testimonials__clients">
+          <div class="testimonials__client">
+            <img
+              class="testimonials__client-img"
+              src="./images/image-emily.jpg"
+              alt="Emily's Picture"
+            />
+            <p class="testimonials__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="testimonials__client-name">Emily R.</p>
+            <p class="testimonials__client-role">Marketing Director</p>
+          </div>
+
+          <div class="testimonials__client">
+            <img
+              class="testimonials__client-img"
+              src="./images/image-thomas.jpg"
+              alt="Thomas's Picture"
+            />
+            <p class="testimonials__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="testimonials__client-name">Thomas S.</p>
+            <p class="testimonials__client-role">Chief Operating Officer</p>
+          </div>
+          <div class="testimonials__client">
+            <img
+              class="testimonials__client-img"
+              src="./images/image-jennie.jpg"
+              alt="Jennie's Picture"
+            />
+            <p class="testimonials__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <p class="testimonials__client-name">Jennie F.</p>
+            <p class="testimonials__client-role">Business Owner</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__gallery">
+        <picture class="footer__picture">
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/desktop/image-gallery-milkbottles.jpg"
+          />
+          <img
+            class="footer__img"
+            src="./images/mobile/image-gallery-milkbottles.jpg"
+            alt=""
+          />
+        </picture>
+        <picture class="footer__picture">
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/desktop/image-gallery-orange.jpg"
+          />
+          <img
+            class="footer__img"
+            src="./images/mobile/image-gallery-orange.jpg"
+            alt=""
+          />
+        </picture>
+        <picture class="footer__picture">
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/desktop/image-gallery-cone.jpg"
+          />
+          <img
+            class="footer__img"
+            src="./images/mobile/image-gallery-cone.jpg"
+            alt=""
+          />
+        </picture>
+        <picture class="footer__picture">
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+          />
+          <img
+            class="footer__img"
+            src="./images/mobile/image-gallery-sugar-cubes.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+      <img
+        class="footer__logo"
+        src="./images/logo-footer.svg"
+        alt="Our logo."
+      />
+      <div class="footer__links">
+        <a class="footer__link" href="./index.html">About</a>
+        <a class="footer__link" href="./index.html">Services</a>
+        <a class="footer__link" href="./index.html">Projects</a>
+      </div>
+      <div class="footer__contacts">
+        <a class="footer__contact" href="./index.html">
+          <img src="./images/icon-facebook.svg" alt="Facebook icon" />
+        </a>
+        <a class="footer__contact" href="./index.html">
+          <img src="./images/icon-instagram.svg" alt="Instagram icon" />
+        </a>
+        <a class="footer__contact" href="./index.html">
+          <img src="./images/icon-twitter.svg" alt="Twitter icon" />
+        </a>
+        <a class="footer__contact" href="./index.html">
+          <img src="./images/icon-pinterest.svg" alt="Pinterest icon" />
+        </a>
+      </div>
+      <p class="footer__attribution">
+        Challenge by
+        <a
+          class="footer__link footer__link--attribution"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="footer__link footer__link--attribution"
+          href="https://github.com/Bibars-Shouk"
+          >Bibars Shouk</a
+        >.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
