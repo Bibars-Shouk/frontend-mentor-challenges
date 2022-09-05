@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,48 +7,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>My Frontend Mentor Solutions</title>
+    <title>My Solutions</title>
   </head>
   <body>
-    <header>
-      <img src="./header.svg" alt="My Frontend Mentor solutions" />
-      <p>
-        <strong> Frontend Mentor </strong> is a platform that provide front-end
-        challenges that include professional web designs. These allow developers
-        to practice building websites in a realistic workflow.
-      </p>
+    <header class="header">
+      <div class="header__container">
+        <img
+          class="header__logo"
+          id="logo"
+          src="./images/logo-light.svg"
+          alt=""
+        />
+        <div class="header__toggle-container">
+          <div class="header__toggle-indicator" id="indicator"></div>
+          <button class="toggle" id="toggle">
+            <i class="fas fa-sun toggle__icon toggle__icon--sun"></i>
+            <div class="toggle__line"></div>
+            <i class="fas fa-moon toggle__icon toggle__icon--moon"></i>
+          </button>
+        </div>
+      </div>
     </header>
-    <main>
+    <main class="main">
+      <p class="main__text">
+        Those are my solutions for some of the
+        <a
+          class="main__link"
+          href="https://www.frontendmentor.io"
+          target="_blank"
+        >
+          Frontend Mentor
+          <i class="fas fa-external-link-alt"></i
+        ></a>
+        challenges, a platform that provide front-end challenges that include
+        professional web designs helping developers to practice building
+        websites in a realistic workflow.
+      </p>
+
       <div class="container">
         <!--  -->
-        <!-- <div class="challenge-card">
-          <div class="solution-ss-container">
-            <img src="./bfmc-interactive-rating-component.png" alt="ss" />
-            <div class="blur-bg">
-              <div class="solution-tools">
-                <h3 class="tool__html">HTML</h3>
-                <h3 class="tool__css">CSS</h3>
-                <h3 class="tool__js">JS</h3>
-              </div>
-            </div>
+        <!-- 
+          <div class="card">
+          <div class="card__ss-container">
+            <img
+              class="card__img"
+              src="./bfmc-interactive-rating-component/bfmc-interactive-rating-component.png"
+              alt="ss"
+            />
           </div>
-          <div class="challenge-card-body">
-            <h1>Interactive rating component</h1>
-            <a href="#">View Live <i class="far fa-eye"></i></a>
-            <a href="#">Source Code <i class="fab fa-github"></i></a>
+          <div class="card__body">
+            <ul class="card__tools-list">
+              <li class="card__tool card__tool--html">
+                <div class="card__tool-img-container">
+                  <img class="card__tool-img" src="./images/html.svg" alt="" />
+                </div>
+                <p class="card__tool-text">HTML</p>
+              </li>
+              <li class="card__tool card__tool--css">
+                <div class="card__tool-img-container">
+                  <img class="card__tool-img" src="./images/css.svg" alt="" />
+                </div>
+                <p class="card__tool-text">CSS</p>
+              </li>
+              <li class="card__tool card__tool--js">
+                <div class="card__tool-img-container">
+                  <img class="card__tool-img" src="./images/js.svg" alt="" />
+                </div>
+                <p class="card__tool-text">JS</p>
+              </li>
+            </ul>
+            <p class="card__project-name">Lorem ipsum dolor sit so.</p>
           </div>
-        </div> -->
+          <div class="card__actions">
+            <a href="" class="card__btn card__btn--primary">
+              <span class="card__action-text"> View Code </span>
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="" class="card__btn card__btn--secondary">
+              <span class="card__action-text"> Preview Site </span>
+              <i class="far fa-eye"></i>
+            </a>
+          </div>
+        </div>
+         -->
         <!--  -->
       </div>
     </main>
